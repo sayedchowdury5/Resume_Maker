@@ -1,0 +1,20 @@
+﻿
+
+textarea {
+  width: 300px;
+  height: 150px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+span{
+	display: inline-block;
+	width : 120px;
+	height:10px;
+}
+
+.inputbox2{
+	width:240px;
+	padding-left: 10px;
+}

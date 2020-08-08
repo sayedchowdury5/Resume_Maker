@@ -1,0 +1,118 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
+body{
+    margin: 100px 300px 300px 300px;
+	background-image:url("blacklines.gif");
+	background-color: rgba(1,1,1,1)
+	background-repeat: no-repeat;
+	background-position: auto 100px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header {
+	background-color: #ddd;
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 10px #aaa;
+}
+
+h1{
+	text-align: center;
+	padding:10px;
+	margin:10px;
+}
+
+form{
+	background-color: rgba(1,1,1,0.5);
+	margin-top: 10px;
+	color:white;
+	padding:10px;
+	text-align:center;
+}
+
+
+
+legend
+{
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	color: yellow;
+	font-size: 20px;
+	text-shadow: 1px 1px rgba(244,244,244,0.8);
+}
+
+legend:hover{
+	font-size:22px;
+	text-shadow:1px 1px rgba(222,222,222,0.4);
+	font-weight: bold;
+}
+
+div{
+text-align: center;
+}
+
+fieldset legend {
+	margin: 10px 10px 10px;
+}
+
+fieldset div {
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+fieldset div label {
+	display: inline-block;
+	width: 160px;
+}
+
+fieldset {
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="Email"], input[type="Password"] {
+	width: 70%;
+}
+
+input[type="submit"], input[type="reset"] {
+	padding: 10px;
+	width: 200px;
+
+	background-color: rgba(128,128,0,0.8);
+    border: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+a{
+	padding:auto;
+	color: rgba(255,255,255,0.6);
+	text-decoration: none;
+}
+
+a:hover{
+	color: rgba(255,255,255,1);
+}
+
+input[type="submit"]:hover{
+	background-color: rgba(128,128,0,0.9);
+	text-shadow:1px 1px rgba(222,222,222,0.4);
+}
+.button{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.backlink{
+	float: right;
+}
+
+

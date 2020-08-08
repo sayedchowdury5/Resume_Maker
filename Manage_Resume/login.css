@@ -1,0 +1,81 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	background-image:url("house.gif");
+	background-repeat:no-repeat;
+	background-position: stretch center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+form{
+	background-color: rgba(93, 109, 126, 0.9);
+	margin: 50px 30% 30px 30%;
+	padding:20px;
+	margin-top: 100px;
+	border-radius: 10px;
+}
+
+.loghead{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family: lovelo;
+  color: white;
+  text-shadow: 1px 1px rgba(1,1,1,0.5);
+}
+
+div{
+  padding: 10px;
+  text-align: center;
+  color: rgba( 202, 207, 210, 0.8);
+  text-shadow:1px 1px rgba(1,1,1,0.5);
+}
+
+div a{
+	text-decoration: none;
+	color:rgba(51,102,255,1);
+}
+div a:hover{
+	color:rgba(255,255,255,0.8);
+	text-shadow:1px 1px rgba(255,255,255,0.2);
+}
+
+span{
+	display: inline-block;
+	font-family: lovelo;
+	font-size: 20px;
+	width : 100px;
+}
+
+.inputbox{
+	width:180px;
+	height:30px;
+	padding-left: 10px;
+	background-color: rgba(255,255,255,0.5); 
+	border:none;
+	border-radius: 6px;
+}
+
+.inputbox:focus { 
+	background-color: rgba(255,255,255,0.8); 
+	box-shadow: 2px 2px 2px rgba(1,1,1,0.5);
+}
+
+.loginbtn{
+    background-color: rgba(0,128,0,0.8);
+    border: none;
+    color: white;
+    text-shadow:1px 1px rgba(1,1,1,0.5);
+
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

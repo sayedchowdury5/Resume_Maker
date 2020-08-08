@@ -1,0 +1,43 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    background-image: url("adminhome.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+ }
+
+ header{
+    color: black;
+    margin-left: 10px;
+    background-color: rgb(22, 208, 238 );
+    margin-right: 60%;
+ }
+ p{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 150px;
+ }
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+}
+
+
+li a {
+    display: inline block;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid #ddd;
+    color: white;
+    font-size: 18px;
+     float: right;
+}

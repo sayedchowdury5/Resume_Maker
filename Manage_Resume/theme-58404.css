@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image:url("bluebackground.png");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+header h1{
+	background-color:rgba(50,50,50,0.5);
+	color: yellow;
+	padding: 20px;
+	text-align: center;
+	font-family: "Times New Roman";
+	width: 100%;
+}
+header img {
+	display: block;
+	margin: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 70px;
+	height: 50%;
+	width: 30%;
+	box-shadow: 1px 1px 10px black;
+}
+section {
+	margin: 40px auto 40px;
+	padding: 10px;
+	width: 60%;
+	background-color: #DDDDDE;
+	border: 1px solid #aaa;
+	box-shadow: 10px 10px 10px #aaa;
+	text-align: center;
+}
+div.musketeer, div.work, div.languages {
+	margin-top: 20px;
+	background-color: #0091D5;
+	border-style: solid;
+	border-color: black;
+	font-family: Geneva;
+}
+div.location, div.awards, div.interests {
+	margin-top: 20px;
+	background-color: #6AB187;
+	border-style: double;
+	border-width: thick;
+	border-color: black;
+}
+div.profile, div.skill, div.references {
+	margin-top: 20px;
+	background-color: #488A99;
+	border-style: dashed;
+	border-color: black;
+}
+ul {
+	margin-top: 5px;
+	margin-left: 50px;
+}
+li {
+	padding-left: 10px;
+}
+h2, h3 {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 25px;
+}
+p {
+	margin-top: 10px;
+	text-align: center;
+	text-decoration-color: white;
+	font-family: Courier;
+	word-spacing: 3.5px;
+	border: 2px solid black;
+    border-radius: 5px;
+}
+div.musketeer p{
+	font-style: italic;
+}

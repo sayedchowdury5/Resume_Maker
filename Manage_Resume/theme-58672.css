@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgba(255,248,220,1);
+}
+header{
+	background-color: rgba(210,105,30,0.8);
+	width:100%;
+	border-bottom:5px solid red;
+	top:0;
+}
+
+h1{
+	float: right;
+	padding: 20px;
+}
+img{
+	text-align: center;
+	display: block;
+	padding: 22px;
+	margin: auto;
+	border-radius:50%;
+}
+
+h1,h2,h3{
+	font-family: "Roboto", sans-serif;
+	color: rgb(139,0,0);
+}
+span{
+	font-weight: bold;
+}
+
+section{
+	display: grid;
+  	grid-template-areas:
+    'musketeer musketeer musketeer'
+    'location profiles profiles'
+    'work work work'
+    'awards . skills'
+    'languages . interests'
+    'references references references';
+  	grid-gap: 20px;
+
+	background-color :rgba(245,222,179,1);
+    padding: 0 20px 20px 20px;
+    margin:auto 20px auto 20px;
+}
+.musketeer { grid-area: musketeer; }
+.location { grid-area:location; }
+.profiles { grid-area: profiles; }
+.work { grid-area: work; }
+.awards { grid-area: awards; }
+.skills { grid-area: skills; }
+.languages { grid-area: languages; }
+.interests { grid-area: interests; }
+.references { grid-area: references; }
+
+div{
+	text-indent: 20px;
+	background-color: rgb(255,235,205);
+}
+
+ul{
+	padding-left: 40px;
+}
+
+.musketeer{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+
+.location{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+
+}
+
+.profiles{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}	
+
+.work{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+
+.awards{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+.skills{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+
+.languages{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+.interests{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+.references{
+	border:1px solid red;
+	padding:5px;
+	border-radius:10px;
+}
+
+
+.text-col1{
+	display : inline-block;
+	width:160px;
+	font-weight:bold;
+}
+
+.link-head, .link{
+	padding-bottom: 15px;
+	font-weight:bold;
+}
+
+@media only screen and (max-width: 700px){
+	section{
+	grid-template-areas:
+	"musketeer"
+	"location"
+	"profiles"
+	"work"
+	"awards"
+	"skills"
+	"languages"
+	"interests"
+	"references"
+	;
+
+}
+}

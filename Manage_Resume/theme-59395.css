@@ -1,0 +1,544 @@
+/* =================================================================== 
+ * TMT2654~G05(SE)- Web Based System Development
+ * Abu Sayed (59395)
+ * Assignment - 20%
+ * Due Date - 9th April 2018
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  # webfonts and iconfonts
+ *  # web animation
+ *  # base style overrides
+ *      ## links
+ *  # typography & general theme styles
+ *      ## responsive grid container
+ *      ## lists
+ *  # header styles
+ *      ## header image
+ *  # about
+ *      ## location
+ *      ## profiles
+ *  # work
+ *  # award
+ *  # language
+ *  # skill
+ *  # interest
+ *  # reference
+ *  # footer
+ *  # responsive device orientation
+ * =================================================================== */
+
+
+
+ /* ===================================================================
+ *                     # webfonts and iconfonts
+ *
+ * ------------------------------------------------------------------- */
+
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ @import url("https://fonts.googleapis.com/css?family=Lobster");
+
+ .fa{
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+ /* ===================================================================
+ *                     # web animation
+ *
+ * ------------------------------------------------------------------- */
+
+@keyframes animation1 {
+    from {color: yellow;}
+    to {color: blue;}
+}
+
+
+/* ===================================================================
+ *                     # base style overrides
+ *
+ * ------------------------------------------------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## links
+ * ------------------------------------------------------------------- */
+
+a{
+    text-decoration: none;
+}
+
+/* ===================================================================
+ *                # typography & general theme styles 
+ * 
+ * ------------------------------------------------------------------- */
+
+/*section{
+    padding: 20px;
+    transition: box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
+}*/
+
+/*section:hover{
+    box-shadow: 10px 10px 20px black;
+    transform: scale(1.10);
+}*/
+
+h2{
+    border-bottom: 2px solid black;
+    font-size: 35px;
+    letter-spacing: 2px; 
+    color: yellow; 
+    text-shadow: 3px 2px 10px red;
+    text-align: center; 
+}  
+
+
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 30px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   ## responsive grid container
+ * ------------------------------------------------------------------- */
+
+ body {
+    background-image: url("bgpic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 100px 100px 100px;
+    background-size: cover;
+    background-position: center top;
+    
+    display: grid;
+    grid-template-columns: repeat("5, 1fr");
+    grid-gap: 10px;
+    grid-template-areas: 
+        "hd hd hd hd hd"
+        "s1 s1 s1 s1 s2"
+        "s3 s3 s4 s4 s5"
+        "s6 s6 s7 s7 ."
+        "s8 s8 s8 s8 s8";
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## lists 
+ * ------------------------------------------------------------------- */
+
+ul{
+    margin: 0 0 0 20px;
+}
+
+
+li{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: rgb(51, 51, 51);
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # header styles
+ * ------------------------------------------------------------------- */
+
+ header{
+
+    background-color: rgba( 51, 181, 255, 0.03);
+    grid-area: hd;
+    text-align: center;
+    margin-bottom: 50px;   
+}
+
+
+header h1{
+
+    font-family: "Lobster", sans-serif ;
+    font-size: 80px;
+    text-shadow: 2px 2px white;
+    margin-top: 10px;
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+
+header h2{
+
+    border-bottom: 0;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   ## header image
+ * ------------------------------------------------------------------- */
+
+img{
+    display:block;
+    border-radius: 50%;
+    height: 5%;
+    width: 14%;
+    margin: 0 auto 0 auto;
+    box-shadow: 2px 2px 5px white;
+    border-style: solid;
+    border-color: black;
+    transition: transform 0.5s ease;
+    margin-top: 35px;
+}
+
+img:hover {
+    transform: rotate(8deg) scale(1.10);
+}
+
+
+
+/* ------------------------------------------------------------------- 
+ *                   #about
+ * ------------------------------------------------------------------- */
+
+.about{
+    grid-area: s1;
+    background-color: rgba(1,1,1,0.5);
+    border-radius: 25px;
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.summary{
+
+    color: white;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.contact{
+    margin-right: 10%;
+}
+
+.text-col1{
+
+    color: white;
+    margin-right: 20px;
+}
+
+.text-row1{
+
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   ## location
+ * ------------------------------------------------------------------- */
+
+.location{
+
+    background-color: lightgray;
+    border-style: dashed;
+    margin-left: 10%;
+    margin-top: 13px;
+    padding: 5px;
+    width: 75%;
+       
+}
+
+.text-col{
+
+    display: inline-block;
+    width: 40%;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+    line-height: 25px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   ## profiles
+ * ------------------------------------------------------------------- */
+
+.profiles{
+
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    width: 75%;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgray;
+    border-style: dashed;
+}
+
+
+.text-col2{
+
+    color: green;
+    margin-right: 15px;
+}
+
+.text-row2{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # skill
+ * ------------------------------------------------------------------- */
+
+.skill {
+    grid-area: s2;
+    background-color: rgba(1,1,1,0.5); 
+    border-radius: 25px;  
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.skills{
+
+    background-color: lightgray;
+    border-style: dashed;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10%;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # work
+ * ------------------------------------------------------------------- */
+
+.work{
+    grid-area: s3;
+    background-color: rgba(1,1,1,0.5);
+    border-radius: 25px;
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.works{
+
+    background-color: lightgray;
+    border-style: dashed;
+    margin: 3%;
+    padding: 10px;
+    line-height: 20px;
+}
+
+#work-name{
+
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # award
+ * ------------------------------------------------------------------- */
+
+.award{
+    grid-area: s4;
+    background-color: rgba(1,1,1,0.5);
+    border-radius: 25px;
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.awards{
+
+    background-color: lightgray;
+    border-style: dashed;
+    margin: 3%;
+    padding: 15px;
+    line-height: 24px;
+}
+
+#award_image{
+    display:block;
+    border-radius: 50%;
+    margin-top: 15px;
+    height: 35%;
+    width: 40%;
+    box-shadow: 2px 2px 5px white;
+    border-style: solid;
+    border-color: black;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # language
+ * ------------------------------------------------------------------- */
+
+.language{
+    grid-area: s5;
+    background-color: rgba(1,1,1,0.5);
+    border-radius: 25px;
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.languages{
+    
+    background-color: lightgray;
+    border-style: dashed;
+    margin-top: 25%;
+    padding: 15%;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # interest
+ * ------------------------------------------------------------------- */
+
+.interest{
+    grid-area: s6;
+    background-color: rgba(1,1,1,0.5);
+    border-radius: 25px;
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.interests{
+
+    background-color: lightgray;
+    border-style: dashed;
+    margin: 10px;
+    margin-top: 17px;
+    padding: 5%;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # reference
+ * ------------------------------------------------------------------- */
+
+.reference{
+    grid-area: s7;
+    background-color: rgba(1,1,1,0.5);
+    border-radius: 25px;
+    border-top: 2px solid rgb( 51, 181, 255 );
+    border-bottom: 2px solid rgb( 51, 181, 255 );
+    border-right: 2px solid rgb( 51, 181, 255 );
+    border-left: 5px solid white;
+    box-shadow: 3px 3px 10px rgb( 51, 181, 255 );
+}
+
+.references{
+
+    background-color: lightgray;
+    border-style: dashed;
+    margin: 10px;
+    margin-top: 17px;
+    padding: 10%;
+}
+
+
+/* ===================================================================
+ *                           # footer
+ *
+ * ------------------------------------------------------------------- */
+
+#footer{
+    
+    background-color:rgba(0,0,0,0.5);
+    grid-area: s8;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* ===================================================================
+ * # Landscape orientation for mobile and half-screen for monitor
+ *
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-template-areas: 
+            "hd hd hd hd hd"
+            ". s1 s1 s1 ."
+            ". s2 s2 s2 ."
+            ". s3 s3 s3 ."
+            ". s4 s4 s4 ."
+            ". s5 s5 s5 ."
+            ". s6 s6 s6 ."
+            ". s7 s7 s7 ."
+            ". s8 s8 s8 .";
+    }
+}
+
+
+/* ===================================================================
+ * # Potrait orientation for mobile devices
+ *
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 400px) {
+    body {
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-template-areas: 
+            "hd hd hd hd hd"
+            "s1 s1 s1 s1 s1"
+            "s2 s2 s2 s2 s2"
+            "s3 s3 s3 s3 s3"
+            "s4 s4 s4 s4 s4"
+            "s5 s5 s5 s5 s5"
+            "s6 s6 s6 s6 s6"
+            "s7 s7 s7 s7 s7"
+            "s8 s8 s8 s8 s8";
+    }
+    
+    header img {
+        width: 40%;
+        height: 30%;
+    }
+
+    #award_image{
+        width: 40%;
+        height: 32%;
+    }
+}
